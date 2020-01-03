@@ -1,0 +1,89 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/skyliner34"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:text="RPM"
+            android:id="@+id/btn_rpm"
+            android:onClick="rpmActivity"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:text="Voltagem da Bateria"
+            android:id="@+id/btn_voltagem_bateria"
+            android:layout_gravity="right|bottom"
+            android:onClick="VoltagemBateria"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:text="Pressao do Coletor de Admissao"
+            android:id="@+id/btn_press_coletor_admissao"
+            android:layout_gravity="left|bottom"
+            android:onClick="pressaoColetorAdmissao"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:text="Temperatura do líquido refrigerador"
+            android:id="@+id/btn_temp_liquido"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="LiquidTemperatureActivity"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:text="TEMPERATURA DO AR DE ADMISSÃO"
+            android:id="@+id/btn_ar_admissao"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="tempArAdmissao"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/circle"
+            android:text="Pressão do Combustível"
+            android:id="@+id/btn_pres_combus"
+            android:layout_gravity="right|top"
+            android:onClick="pressaoCombustivel"
+            android:textColor="#fff" />
+    </FrameLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="android.com.br.conexaobluetooth.activities.ReportActivity">
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/graph_rel_rpm"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mínima do RPM:"
+            android:id="@+id/text_min_rpm"
+            android:layout_below="@+id/graph_rel_rpm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Máxima do RPM:"
+            android:id="@+id/text_max_rpm"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text_min_rpm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/min_rpm"
+            android:layout_above="@+id/max_rpm"
+            android:layout_alignRight="@+id/graph_rel_rpm"
+            android:layout_alignEnd="@+id/graph_rel_rpm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/max_rpm"
+            android:layout_alignTop="@+id/text_max_rpm"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/graph_rel_press_col"
+            android:layout_below="@+id/max_rpm"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mínima pressão do coletor:"
+            android:id="@+id/text_min_press_col"
+            android:layout_below="@+id/graph_rel_press_col" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Máxima pressão do coletor:"
+            android:id="@+id/text_max_press_col"
+            android:layout_below="@+id/text_min_press_col" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/min_press_col"
+            android:layout_below="@+id/graph_rel_press_col"
+            android:layout_alignRight="@+id/graph_rel_press_col"
+            android:layout_alignEnd="@+id/graph_rel_press_col" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/max_press_col"
+            android:layout_below="@+id/min_press_col"
+            android:layout_alignRight="@+id/graph_rel_press_comb"
+            android:layout_alignEnd="@+id/graph_rel_press_comb" />
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/graph_rel_press_comb"
+            android:layout_below="@+id/max_press_col"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mínima pressão do comb."
+            android:id="@+id/text_min_press_comb"
+            android:layout_below="@+id/graph_rel_press_comb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Máxima pressão do comb."
+            android:id="@+id/text_max_press_comb"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text_min_press_comb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/min_press_comb"
+            android:layout_below="@+id/graph_rel_press_comb"
+            android:layout_alignRight="@+id/graph_rel_press_comb"
+            android:layout_alignEnd="@+id/graph_rel_press_comb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/max_press_comb"
+            android:layout_alignTop="@+id/text_max_press_comb"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/graph_rel_temp_ar"
+            android:layout_below="@+id/max_press_comb"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mínima temperatura ar"
+            android:id="@+id/text_min_temp_ar"
+            android:layout_below="@+id/graph_rel_temp_ar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Máxima temperatura ar:"
+            android:id="@+id/text_max_temp_ar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text_min_temp_ar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/min_temp_ar"
+            android:layout_below="@+id/graph_rel_temp_ar"
+            android:layout_alignLeft="@+id/max_press_comb"
+            android:layout_alignStart="@+id/max_press_comb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/max_temp_ar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/min_temp_ar" />
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/graph_rel_temp_liq"
+            android:layout_below="@+id/text_max_temp_ar"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mínima temp radiador:"
+            android:id="@+id/text_min_temp_liq"
+            android:layout_below="@+id/graph_rel_temp_liq"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Máxima temp radiador:"
+            android:id="@+id/text_max_temp_liq"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text_min_temp_liq" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/min_temp_liq"
+            android:layout_below="@+id/graph_rel_temp_liq"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculando..."
+            android:id="@+id/max_temp_liq"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/text_min_temp_liq" />
+
+    </RelativeLayout>
+</ScrollView>

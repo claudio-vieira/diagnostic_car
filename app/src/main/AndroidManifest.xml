@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.com.br.conexaobluetooth" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name=".Graphic"
+            android:label="@string/title_activity_graphic"
+            android:parentActivityName=".activities.BluetoothMain" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BluetoothMain" />
+        </activity>
+        -->
+        <activity
+            android:name=".activities.currentData.RPMActivity"
+            android:label="@string/title_activity_rpm" >
+        </activity>
+        <activity
+            android:name=".activities.CarsActivity"
+            android:label="@string/title_activity_cars" >
+        </activity>
+        <activity
+            android:name=".activities.CarDetailActivity"
+            android:label="@string/title_activity_detalhe_carro
+activity_detalhe_carro
+activity_detalhe_carro
+activity_car_detail" >
+        </activity>
+        <activity
+            android:name=".activities.BluetoothMain"
+            android:label="@string/title_activity_bluetooth_main" >
+        </activity>
+        <activity
+            android:name=".activities.currentData.LiquidTemperatureActivity"
+            android:label="@string/title_activity_liquid_temperature" >
+        </activity>
+        <activity
+            android:name=".activities.OBDListActivity"
+            android:label="@string/title_activity_detalhe_carro
+activity_detalhe_carro
+activity_detalhe_carro
+activity_obd_list" >
+        </activity>
+        <activity
+            android:name=".activities.currentData.IntakeAirPressureActivity"
+            android:label="@string/title_activity_detalhe_carro
+activity_detalhe_carro
+activity_detalhe_carro
+activity_intake_air_temperature" >
+        </activity>
+        <activity
+            android:name=".activities.currentData.FuelPressureActivity"
+            android:label="@string/title_activity_detalhe_carro
+activity_detalhe_carro
+activity_detalhe_carro
+activity_fuel_pressure" >
+        </activity>
+        <activity
+            android:name=".activities.StatusAdapter"
+            android:label="@string/title_activity_status_adapter" >
+        </activity>
+        <activity
+            android:name=".activities.TroubleCodesActivity"
+            android:label="@string/title_activity_trouble_codes" >
+        </activity>
+        <activity
+            android:name=".activities.currentData.IntakeCollectorPressureActivity"
+            android:label="@string/title_activity_detalhe_carro
+activity_detalhe_carro
+activity_detalhe_carro
+activity_intake_collector_pressure" >
+        </activity>
+        <activity
+            android:name=".activities.currentData.BatteryVoltageActivity"
+            android:label="@string/title_activity_battery_voltage" >
+        </activity>
+        <activity
+            android:name=".activities.ReportActivity"
+            android:label="@string/title_activity_detalhe_carro
+activity_detalhe_carro
+activity_detalhe_carro
+activity_report" >
+        </activity>
+        <activity
+            android:name=".activities.ReportListActivity"
+            android:label="@string/title_activity_detalhe_carro
+activity_detalhe_carro
+activity_detalhe_carro
+activity_report_list" >
+        </activity>
+        <activity
+            android:name=".activities.ShowReportActivity"
+            android:label="@string/title_activity_detalhe_carro
+activity_detalhe_carro
+activity_detalhe_carro
+activity_show_report" >
+        </activity>
+    </application>
+
+</manifest>
